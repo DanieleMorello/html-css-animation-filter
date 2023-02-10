@@ -192,7 +192,7 @@
 .ex-11-icon:hover {
   transition: all 0.5s ease-in;
   animation-name: rotate;
-  animation-duration: 1s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -220,41 +220,60 @@
 /* #endregion Dodici esercizio */
 
 /* #region Tredici esercizio */
-.well {
-  position: relative;
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: move-top;
+  animation-duration: 10s;
+  animation-timing-function: linear; 
 }
 
-.ex-13-bottom-white {
-  position: absolute;
-    animation-name: move;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    top: 0;
-    left: 0;
+@keyframes move-top {
+  25% {
+      top: 0;
+      right: 0;
+  }
+
+   50% {
+      bottom: 0;
+      right: 0; 
+  }
+
+  75% {
+      bottom: 0;
+      left: 0;
+  }
+
+  100% {
+      top: 0;
+      left: 0;
+  } 
 }
 
-.ex-13-bottom-white:hover {
-  
-  @keyframes move {
-    25% {
-        top: 0;
-        left: calc(100% - 20px)
-    }
-
-    /* 50% {
-        top: calc(100% - 50px);
-        left: calc(100% - 50px);
-    }
-
-    75% {
-        top: calc(100% - 50px);
-        left: 0;
-    }
-
-    100% {
-        top: 0;
-        left: 0;
-    } */
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: move-bottom;
+  animation-duration: 4s;
+  animation-timing-function: linear;
 }
+
+@keyframes move-bottom {
+  25% {
+      left: 0;
+      bottom: 0;
+  }
+
+   50% {
+      left: 0;
+      top: 0;
+  }
+
+  75% {
+      top: 0;
+      right: 0;
+  }
+
+  100% {
+      right: 0;
+      bottom: 0;
+  } 
 }
+
 /* #endregion Tredici esercizio */
