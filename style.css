@@ -24,7 +24,9 @@
   height: 60px;
   background: red;
 }
-.ex-6-img, .ex-7-img, .ex-8-img {
+.ex-6-img,
+.ex-7-img,
+.ex-8-img {
   width: 500px;
 }
 
@@ -38,7 +40,8 @@
 .ex-11-icon {
   font-size: 60px;
 }
-.ex-12-button, .ex-13-button {
+.ex-12-button,
+.ex-13-button {
   position: relative;
   display: block;
   width: 200px;
@@ -51,7 +54,8 @@
   text-align: center;
   text-decoration: none;
 }
-.ex-12-top-white, .ex-13-top-white {
+.ex-12-top-white,
+.ex-13-top-white {
   position: absolute;
   top: -10px;
   left: 10%;
@@ -59,7 +63,8 @@
   width: 60px;
   height: 20px;
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
+.ex-12-bottom-white,
+.ex-13-bottom-white {
   position: absolute;
   bottom: -10px;
   right: 20%;
@@ -67,3 +72,189 @@
   width: 60px;
   height: 20px;
 }
+
+/* Mio CSS */
+/* #region Primo esercizio fatto */
+.ex-1-square {
+  transition: background-color 5s;
+}
+.ex-1-square:hover {
+  background-color: red;
+}
+/* #endregion Primo esercizio fatto */
+
+/* #region Secondo esercizio da riveder */
+.ex-2-square {
+  transition: width 5s;
+}
+
+.ex-2-square:active {
+  width: 100vw;
+  max-width: 97%;
+}
+/* #endregion Secondo esercizio */
+
+/* #region Terzo esercizio fatta */
+.ex-3-square {
+  transition: border-radius 1s;
+}
+
+.ex-3-square:hover {
+  border-radius: 50%;
+}
+/* #endregion Terzo esercizio */
+
+/* #region Quarto esercizio fatto */
+.ex-4-square {
+  transition: opacity 1s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+/* #endregion Quarto esercizio */
+
+/* #region Quinto esercizio  fatto*/
+.ex-5-square {
+  transition: all 1s;
+}
+
+.ex-5-square:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.ex-5-square:active {
+  width: 30px;
+  height: 30px;
+}
+/* #endregion Quinto esercizio */
+
+/* #region Sesto esercizio  fatto*/
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+/* #endregion Sesto esercizio */
+
+/* #region Settimo esercizio  fatto*/
+.ex-7-img {
+  transition: filter 5s;
+}
+
+.ex-7-img:hover {
+  filter: grayscale(1);
+}
+/* #endregion Settimo esercizio */
+
+/* #region Ottavo esercizio  fatto*/
+.ex-8-img {
+  transition: all 5s;
+}
+
+.ex-8-img:hover {
+  filter: blur(2px) grayscale(20%);
+  border-radius: 25px;
+}
+/* #endregion Ottavo esercizio */
+
+/* #region Nono esercizio  fatto*/
+.ex-9-img {
+  transition: all 5s;
+}
+
+.ex-9-img:hover {
+  filter: blur(2px) grayscale(20%);
+  border-radius: 25px;
+  width: 800px;
+}
+/* #endregion Nono esercizio */
+
+/* #region Decimo esercizio */
+.ex-10-icon {
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+/* #endregion Decimo esercizio */
+
+/* #region Undici esercizio:hover */
+.ex-11-icon:hover {
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+/* #endregion Undici esercizio */
+
+/* #region Dodici esercizio */
+.ex-10-img {
+  transition: all 5s;
+}
+
+.ex-10-img:hover {
+  filter: blur(2px) grayscale(20%);
+  border-radius: 25px;
+  width: 800px;
+}
+/* #endregion Dodici esercizio */
+
+/* #region Tredici esercizio */
+.well {
+  position: relative;
+}
+
+.ex-13-bottom-white {
+  position: absolute;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    top: 0;
+    left: 0;
+}
+
+.ex-13-bottom-white:hover {
+  
+  @keyframes move {
+    25% {
+        top: 0;
+        left: calc(100% - 20px)
+    }
+
+    /* 50% {
+        top: calc(100% - 50px);
+        left: calc(100% - 50px);
+    }
+
+    75% {
+        top: calc(100% - 50px);
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    } */
+}
+}
+/* #endregion Tredici esercizio */
