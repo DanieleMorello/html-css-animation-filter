@@ -216,14 +216,14 @@
 
 @keyframes move-top-linea {
   0% {
-      right: 90%;
-  }
-  50% {
-      left: calc(100% - 60px);
-  }
-  100% {
-      right: 90%;
-  }
+    left: 10%;
+}
+50% {
+    left: calc(100% - 60px);
+}
+100% {
+    left: 10%;
+}
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
@@ -234,14 +234,14 @@
 
 @keyframes move-bottom-linea {
   0% {
-      right: 20%;
-  }
-  50% {
-      right: calc(100% - 60px);
-  }
-  100% {
-      right: 20%;
-  }
+    right: 20%;
+}
+50% {
+    right: calc(100% - 60px);
+}
+100% {
+    right: 20%;
+}
 }
 /* #endregion Dodici esercizio */
 
